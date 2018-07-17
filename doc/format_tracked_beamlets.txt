@@ -1,0 +1,7 @@
+fmap_size_x fmap_size_y
+blt_size_x blt_size_y    # units of mm
+iso_x iso_y iso_z        # units of mm
+
+blt_x_1 blt_y_1
+blt_x_2 blt_y_2
+blt_x_3 blt_y_3

@@ -1,0 +1,7 @@
+.ycm_extra_conf.py
+HepRApp.jar
+
+# monte carlo geometry files
+mcgeo*.txt
+*.h5
+*.so

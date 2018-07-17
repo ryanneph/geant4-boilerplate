@@ -1,0 +1,26 @@
+##################comments after pound-signs
+# Verbose level 
+/control/verbose 1
+/process/verbose 0
+/run/verbose 1
+/event/verbose 0
+/geometry/navigator/verbose 0
+/tracking/verbose 0
+
+# set number of threads
+/run/numberOfThreads 1
+
+#Following Geometry parameters should be set prior run initialization: toggle attenuator, attenuator thickness, detector position
+/run/initialize
+
+# define General Particle Source
+/control/execute square_field_gps.mac
+
+# generate HepRap file according to settings in vis.mac
+# /control/execute vis.mac
+
+# Periodic Output Technique (8 x 32 batches)
+/run/beamOn 10   # test periodic output
+/run/beamOn 10   # test periodic output
+/run/beamOn 10   # test periodic output
+/run/beamOn 10   # test periodic output

@@ -1,0 +1,18 @@
+# define General Particle Source with 10x10cm field size at origin directed in +z
+/gps/particle gamma
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/centre 0 0 -110 cm
+# /gps/pos/rot1 -1 0 0
+# /gps/pos/rot2 0 -1 0
+# field size at origin will be 20*half{x,y}
+/gps/pos/halfx 5 mm
+/gps/pos/halfy 5 mm
+/gps/ang/type focused
+/gps/ang/focuspoint 0 0 -100 cm
+
+# define beam spectrum (6MV - from varian 6X phsp files)
+/gps/ene/type Arb
+/gps/hist/type arb
+/gps/hist/file spectrum_varian6X.mac
+/gps/hist/inter Lin
