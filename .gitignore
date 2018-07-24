@@ -2,6 +2,6 @@
 HepRApp.jar
 
 # monte carlo geometry files
-mcgeo*.txt
+# mcgeo*.txt
 *.h5
 *.so

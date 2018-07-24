@@ -62,7 +62,7 @@ endforeach()
 file(GLOB input_files
     ${PROJECT_SOURCE_DIR}/*.in
     ${PROJECT_SOURCE_DIR}/*.mac
-    ${PROJECT_SOURCE_DIR}/mcgeo*.txt
+    ${PROJECT_SOURCE_DIR}/geometry/*.txt
     ${PROJECT_SOURCE_DIR}/tracked_beamlets.txt
 )
 install(FILES
