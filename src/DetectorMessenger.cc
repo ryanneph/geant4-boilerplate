@@ -38,8 +38,8 @@ DetectorMessenger::DetectorMessenger(DetectorConstruction * Det)
 DetectorMessenger::~DetectorMessenger()
 {
 	delete   Dir;
-    delete   geoCmd;
-    delete   geoshowCmd;
+    // delete   geoCmd;
+    // delete   geoshowCmd;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -52,8 +52,8 @@ void DetectorMessenger::SetNewValue(G4UIcommand* command,G4String newValue) {
     // }
 }
 G4String DetectorMessenger::GetCurrentValue(G4UIcommand* command) {
-    if (command == geoCmd) {
-        return g_geoFname;
-    }
+    // if (command == geoCmd) {
+    //     return g_geoFname;
+    // }
     return G4String("");
 }

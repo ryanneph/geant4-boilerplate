@@ -19,7 +19,7 @@
 #include "G4ios.hh"
 
 #include <vector>
-#include <exception.h>
+#include <exception>
 
 // keep a count of the number of events that have already been procesed; updated after each run by the master thread
 long int g_eventsProcessed = 0;
