@@ -1,5 +1,4 @@
 import sys
-sys.path.append('/home/ryan/projects/BiCEP-Dosecalc/extern/python') # volume.py, fmaps.py
 import os
 import struct
 import numpy as np
