@@ -214,7 +214,7 @@ void DetectorConstruction::CreateMaterial(G4long i, G4int idx) {
 	if (mat.numMat == 1) { //easy, just making one material
 		if (mat.matID1 == 0) //water
 			matVec[idx] = man->BuildMaterialWithNewDensity(ss.str(), "G4_WATER", mat.den);
-		else if (mat.matID1 == 1) //ICRP Lung
+		else if (mat.matID1 == 1) //ICRP Lung - deflated
 			matVec[idx] = man->BuildMaterialWithNewDensity(ss.str(), "G4_LUNG_ICRP", mat.den);
 		else if (mat.matID1 == 2) //titanium
 			matVec[idx] = man->BuildMaterialWithNewDensity(ss.str(), "G4_Ti", mat.den);
@@ -226,6 +226,8 @@ void DetectorConstruction::CreateMaterial(G4long i, G4int idx) {
 			matVec[idx] = man->BuildMaterialWithNewDensity(ss.str(), "G4_BONE_COMPACT_ICRU", mat.den);
 		else if (mat.matID1 == 6) //air
 			matVec[idx] = man->BuildMaterialWithNewDensity(ss.str(), "G4_AIR", mat.den);
+		else if (mat.matID1 == 7) //aluminum
+			matVec[idx] = man->BuildMaterialWithNewDensity(ss.str(), "G4_Al", mat.den);
         else
             throw runtime_error("material undefined");
     } else { throw runtime_error("multi-material voxels not yet implemented"); }
